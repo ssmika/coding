@@ -1,0 +1,237 @@
+/* pc、スマホ共通スタイル */
+
+body {
+  font-family: "Noto Sans JP", "Hiragino Kaku Gothic ProN", Meiryo,Arial, sans-serif; 
+}
+
+header, h1, h2, a {
+  text-decoration: none;
+  font-size: 34px;
+  font-weight: bold;
+  color: #000000;
+}
+
+/*=================
+ PC用のスタイル
+=================*/
+@media screen and (min-width: 768px) {
+  
+  /* 横幅設定 */
+  body {
+    background-color: #ffffff;
+    color: #000000;
+    min-width: 960px;
+    margin: 0 auto 0 auto;
+    padding: 0;
+  }
+
+  /* ヘッダー */
+  header {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0 0 0;
+  }
+
+  /* タイトル */
+  #title {
+    margin: 0px;
+    border-color: #000000;
+    border-style: solid;
+    border-width: 1px;
+    padding: 0px 20px 0px 20px;
+  }
+
+  /* ナビゲーションのレイアウト */
+  #nav {
+    font-size: 34px;
+  }
+
+  /* ナビゲーションのリンクの装飾設定 */
+  #nav > a {
+    text-decoration: none;
+    margin-left: 20px;
+  }   
+  
+  #nav > a:hover {
+    color: #000000; 
+    text-decoration: underline; 
+  }  
+
+  /* メインビジュアル */
+  #main-visual > img {
+    width: 100%;
+    margin: 20px auto 0 auto;
+  }
+
+  /* about */
+  #about > h2 {
+    text-align: center;
+    margin-top: 80px;
+  }
+
+  #about-flex {
+    display: flex;
+    justify-content: center;
+  }
+
+  #about-flex > img {
+    border-radius: 50%;
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-width: 3px;
+    border-style: solid;
+    border-color: #999;
+    padding: 3px;
+    margin: 30px;
+  }
+
+  #about-flex > div {
+    margin: 50px 0 0 50px;
+  }
+  #about-flex > div > h3 {
+    font-size: 24px;
+  }
+
+  #about-flex > div > ul {
+    font-size: 18px;
+  }
+  
+  /* works */
+  #works > h2 {
+    text-align: center;
+    margin-top: 80px;
+  }
+  #works-flex {
+    display: flex;
+    justify-content: center;
+  }
+
+  #works-flex > div {
+    margin: 0 10px 0 10px;
+    width: 250px;
+  }
+
+  #works-flex > div > img {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  #works-flex > div > div {
+    font-size: 18px;
+  }
+
+  /* フッター */
+  footer {
+    text-align: center;
+    margin: 100px auto 50px auto;
+  }
+}  
+  
+/*=================
+ sp用のスタイル
+=================*/
+@media screen and (max-width: 767px) {
+  body {
+    min-width: 375px;
+    margin: 0;
+  }
+ 
+  /* ヘッダー */
+  header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 20px 0 0 0;
+  }
+
+  /* タイトル */
+  #title {
+    margin: 0px;
+    border-color: #000000;
+    border-style: solid;
+    border-width: 1px;
+    padding: 0px 20px 0px 20px;
+  }
+
+  /* ナビゲーションのレイアウト */
+  #nav {
+    font-size: 34px;
+  }
+
+  /* ナビゲーションのリンクの装飾設定 */
+  #nav > a {
+    text-decoration: none;
+    margin-left: 20px;
+  }   
+
+  /* メインビジュアル */
+  #main-visual > img {
+    width: 100%;
+    margin: 20px auto 0 auto;
+
+  }  
+  /* about */
+  #about {
+    margin: 20px 0 20px 0;
+  }
+
+  #about > h2 {
+    text-align: center;
+  }
+  
+  #about-flex {
+    display: flex;
+    flex-direction: column;
+  }
+  #about-flex > img {
+    border-radius: 50%;
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-width: 3px;
+    border-style: solid;
+    border-color: #999;
+    padding: 3px;
+    margin: 0 auto;
+  }
+
+  #about-flex > div {
+    margin: 0 auto;
+  }
+
+  #about-flex > div > h3 {
+    text-align: center;
+  }
+
+
+  /* works */
+  #works > h2 {
+    text-align: center;
+  }
+  
+  #works-flex {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    margin: auto;
+  }
+
+  #works-flex > div > img {
+    width: 200px;
+    margin: 10px auto;
+  }  
+
+  #works-flex > div > div {
+    text-align: center;
+  } 
+
+  /* フッター */
+  footer {
+    text-align: center;
+    margin: 80px auto 50px auto;
+  }  
+}
+
+
+  
