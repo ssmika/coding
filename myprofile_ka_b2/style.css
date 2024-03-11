@@ -1,0 +1,170 @@
+/* bodyの余白をなくす */
+body {
+  padding: 0px;
+  margin: 0px;
+}
+
+/* divの 不要な空白を削除 */
+div {
+  font-size: 0;
+}
+
+/* 共通設定 */
+body {
+  font-family: "Noto Sans JP", "Hiragino Kaku Gothic ProN", Meiryo,Arial, sans-serif; 
+  background-color: #ffffff;
+  color: #000000;
+  margin: 0 auto 0 auto;
+  padding: 0;
+}
+
+header, h1, h2, a {
+  text-decoration: none;
+  font-size: 34px;
+  font-weight: bold;
+  color: #000000;
+}
+
+
+/* ヘッダー */
+header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 20px auto;
+  max-width: 960px;
+}
+
+/* タイトル */
+.title {
+  margin-left: 50px;
+  border-color: #000000;
+  border-style: solid;
+  border-width: 1px;
+  padding: 0px 20px 0px 20px;
+}
+
+/* ナビゲーションのレイアウト */
+.nav {
+  font-size: 34px;
+  margin-right: 0px;
+}
+
+/* ナビゲーションのリンクの装飾設定 */
+.nav > a {
+  text-decoration: none;
+  margin-right: 20px;
+}   
+  
+.nav > a:hover {
+  color: #000000; 
+  text-decoration: underline; 
+}  
+
+/* メインビジュアル */
+#main-visual > img {
+  width: 100%;
+  margin: 0 auto 0 auto;
+}
+
+/* about */
+#about > h2 {
+  text-align: center;
+  margin-top: 80px;
+}
+
+.about-flex {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 20px auto 20px auto;
+  padding: 10px;
+  max-width: 960px;
+}  
+
+/* プロフィール画像切抜　*/
+.about-flex > img {
+  border-radius: 50%;
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  border-width: 3px;
+  border-style: solid;
+  border-color: #999;
+  padding: 3px;
+  margin: 0 auto;
+  max-width: 100%;
+}
+
+/* プロフィール */
+.about-content {
+  margin: 0 auto;
+  padding-left: 40px;
+}
+
+/* プロフィール見出し */
+.about-content > h3 {
+  font-size: 24px;
+}
+
+/* プロフィール詳細 */
+.about-content > ul {
+  font-size: 18px;
+}
+  
+/* works */
+#works > h2 {
+  text-align: center;
+  margin-top: 80px;
+}
+
+/* 説明文文字サイズ */
+.works-item > p {
+  font-size: 18px;
+}
+
+/* 写真と説明文 */
+.works-flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 20px auto 20px auto;
+  max-width: 960px;
+}
+
+.works-item {
+  padding-bottom: 60px;
+  width: 25%;
+}
+
+.works-item > img {
+  margin: 0 auto;
+  width: 100%;
+}
+
+.item_center {
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+/* フッター */
+footer {
+  text-align: center;
+  margin: 0 auto 50px auto;
+}
+
+/* スマートフォン用スタイル */
+@media (max-width: 767px) {
+  .works-item {
+      width: 100%;
+      text-align: center;
+      padding: 0 20px 20px 20px;
+  }
+
+  
+}
+
+  
+
+
+  
